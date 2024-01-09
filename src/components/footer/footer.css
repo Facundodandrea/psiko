@@ -1,1 +1,74 @@
-/*# sourceMappingURL=footer.css.map */
+:root {
+  --PrimaryColor: hsl(137, 59%, 73%);
+  --HoverColor: hsl(137, 59%, 45%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyBg: hsl(210, 29%, 97%);
+  --greyText: hsl(0, 0%, 75%);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.footerContainer {
+  background: var(--whiteColor);
+  width: 100%;
+  padding: 1.875rem 36px;
+}
+.footerContainer .footerContent {
+  display: flex;
+  max-width: 690px;
+  flex-direction: column;
+  border-bottom: 1px solid var(--greyBg);
+  margin-bottom: 1.875rem;
+}
+.footerContainer .footerContent .brandContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.75rem;
+}
+.footerContainer .footerContent .brandContainer img {
+  max-height: 2.5rem;
+}
+.footerContainer .footerContent .brandContainer p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footerContainer .footerContent .containerLinks a {
+  color: var(--greyText);
+}
+.footerContainer .footerContent .containerLinks .footerLinks {
+  margin-bottom: 10px;
+}
+.footerContainer .footerRights {
+  max-width: 690px;
+}
+.footerContainer .footerRights .rightsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerContainer .footerRights .rightsContent p {
+  color: var(--greyText);
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footerContainer .footerContent {
+    position: relative;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.875rem;
+  }
+  .footerContainer .footerRights {
+    position: relative;
+    margin: auto;
+  }
+  .footerContainer .footerRights .rightsContent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=footer.css.map */

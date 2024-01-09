@@ -59,8 +59,3 @@ li{
 .bg-grey{
   background-color: var(--greyBg);
 }
-
-img, video{
-  width: 100%;
-  height: auto;
-}

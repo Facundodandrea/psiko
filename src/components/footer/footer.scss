@@ -1,0 +1,96 @@
+:root {
+    --PrimaryColor: hsl(137, 59%, 73%);
+    --HoverColor: hsl(137, 59%, 45%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyBg: hsl(210, 29%, 97%);
+    --greyText: hsl(0, 0%, 75%);
+    --inputColor: hsl(330, 12%, 97%);
+}
+
+.footerContainer{
+    background: var(--whiteColor);
+    width: 100%;
+    padding: 1.875rem 36px;
+
+    .footerContent{
+        display: flex;
+        max-width: 690px;
+        flex-direction: column;
+        border-bottom: 1px solid var(--greyBg);
+        margin-bottom: 1.875rem;
+
+        
+
+        .brandContainer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.75rem;
+    
+            img {
+                max-height: 2.5rem;
+            }
+    
+            p {
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+
+        .containerLinks{
+            a{
+                color: var(--greyText);
+            }
+            
+            .footerLinks{
+                margin-bottom: 10px;
+            }
+        }
+
+
+    }
+
+    .footerRights{
+        max-width: 690px;
+
+        .rightsContent{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+    
+            p{
+                color: var(--greyText);
+                font-size: .9rem;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .footerContainer{  
+        .footerContent{
+            position: relative;
+            margin: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.875rem;
+
+        }
+    
+        .footerRights{
+            position: relative;
+            margin: auto;
+            .rightsContent{
+                flex-direction: row;
+                justify-content: space-between;  
+            }
+        }
+    
+    }
+}
