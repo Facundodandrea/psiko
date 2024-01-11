@@ -1,0 +1,26 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.slideCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.slideCard .slideContent {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slideCard .slideContent .slideImg {
+  margin-bottom: 1rem;
+  width: 50%;
+}
+.slideCard .slideText {
+  width: 70%;
+}/*# sourceMappingURL=card.css.map */

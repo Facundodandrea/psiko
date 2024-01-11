@@ -1,0 +1,198 @@
+:root {
+    --PrimaryColor: hsl(137, 59%, 73%);
+    --HoverColor: hsl(137, 59%, 45%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyBg: hsl(210, 29%, 97%);
+    --greyText: hsl(240, 5%, 44%);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow: box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
+
+
+//Hero section
+.heroSection{
+    background: var(--greyBg);
+
+    .heroContainer{
+        padding: 30px 1.25rem 60px;
+
+        .heroText{
+            font-size: 1rem;
+            text-align: center;
+
+            h1{
+                font-weight: 500;
+            }
+
+            .textGrey{
+                color: #6b6b76;
+            }
+        }
+
+        .heroImg{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heroSection{   
+        .heroContainer{
+            display: flex;
+            gap: 10rem;
+            justify-content: center;
+            align-items: center;
+
+            .heroText{
+                text-align: left;
+                max-width: 32%;
+            }
+    
+            .heroImg{
+                display: block;
+
+                img{
+                    width: 100%;
+                    position: relative;
+                    right: -1.22rem;
+                    top: -1.8rem;
+                }
+            }
+        }
+    }
+}
+
+//Feeling section
+.feelingSection{
+    background-color: var(--greyBg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .feelingTitle{
+        text-align: center;
+
+        h1{
+            margin: 1rem 0;
+            font-weight: 200;
+        }
+    }
+
+    .feelingBtns{
+        padding: 1.875rem 1.25rem;
+        max-width: 460px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .feelingBtns{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 15px;
+            max-width: 1024px;
+        }
+    }
+}
+
+//About section
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--greyBg);
+    padding-bottom: 2rem;
+    align-items: center;
+
+    h2{
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin: 1.8rem 0;
+    }
+
+    .aboutCard{            
+        background: var(--whiteColor);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+
+        .aboutContent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .aboutImg{
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .aboutTitle{
+            font-weight: 700;
+        }
+
+        .aboutText{
+            width: 80%;
+            padding: 1rem;
+            font-weight: 200;
+            font-size: 1rem;
+            text-align: left;
+        }
+    }
+
+@media screen and (min-width: 768px){
+        .aboutCard{
+            padding: 2.5rem;
+            max-width: 720px;
+            max-height: 240px;
+            flex-direction: row;
+            gap: 15px;
+
+        .aboutContent{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 50%;
+        }
+
+        .aboutTitle{
+            text-align: left;
+        }
+    
+        .aboutImg{
+            width: 40%;
+        }
+    
+        .aboutText{
+            width: 60%;
+        }
+        }
+    }
+}
+
+//Slider section
+.slideSection{
+    display: flex;
+    justify-content: center;
+
+    h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        max-width: 75%;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 768px){
+        h2{
+            font-size: 2rem;
+            max-width: 35%;
+        }
+    }
+}

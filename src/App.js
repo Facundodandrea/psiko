@@ -1,17 +1,15 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import Navbar from '../src/components/navbar/Navbar'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Footer } from './components/footer/Footer';
+
+import Home from './pages/home/Home';
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App bg-grey">
-      <Navbar />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </BrowserRouter>
   );
 }
