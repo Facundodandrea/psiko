@@ -40,7 +40,6 @@ const Navbar = () => {
             </div>
             <ul>
               <li><Link to="/">Inicio</Link></li>
-              <li><Link to="/   ">Saber sobre...</Link></li>
             </ul>
         </div>
       )}
