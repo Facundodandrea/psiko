@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './buttons.css';
 
-const Buttons = ({ feeling, imgSrc, linkTo }) => {
+const Buttons = ({ feeling, imgSrc }) => {
+  const linkTo = `/details/${feeling.toLowerCase()}`;
+
   return (
     <button className='feelingBtn'>
       <Link to={linkTo}>

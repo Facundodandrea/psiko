@@ -1,0 +1,113 @@
+:root {
+  --PrimaryColor: hsl(137, 59%, 73%);
+  --HoverColor: hsl(137, 59%, 45%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyBg: hsl(210, 29%, 97%);
+  --greyText: hsl(0, 0%, 75%);
+  --inputColor: hsl(330, 12%, 97%);
+  --boxShadow: box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
+
+.detailContainer {
+  display: flex;
+  background-color: var(--greyBg);
+  flex-direction: column;
+  align-items: center;
+}
+.detailContainer .detailContent {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1.875rem 0;
+  gap: 10%;
+  width: 70%;
+}
+.detailContainer .detailContent .detailText {
+  display: flex;
+  flex-direction: column;
+}
+.detailContainer .detailContent .detailText h1 {
+  margin: 1.875rem 0;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.detailContainer .detailContent .detailText p {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  text-align: left;
+}
+.detailContainer .detailContent img {
+  display: none;
+}
+.detailContainer .detailsTips {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1.875rem 0;
+  gap: 10%;
+  width: 70%;
+}
+.detailContainer .detailsTips :nth-child(6) {
+  border: none;
+}
+.detailContainer .detailsTips .detailParagraph {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+.detailContainer .detailsTips .detailSubtitle {
+  margin: 1.875rem 0;
+}
+.detailContainer .detailsTips .detailSubtitle h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.detailContainer .accordion {
+  width: 100%;
+  border-top: 1px solid var(--greyText);
+}
+.detailContainer .accordion .accordion-visible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  flex-direction: row;
+  border: none;
+  margin-bottom: 1rem;
+}
+.detailContainer .accordion .accordion-visible span {
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+}
+.detailContainer .accordion .accordion-toggle {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+.detailContainer .accordion .accordion-toggle.open {
+  max-height: 700px;
+  transition: max-height 0.3s ease-in;
+}
+.detailContainer .accordion .accordion-toggle p {
+  padding-left: 10px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .detailContainer .detailContent img {
+    position: relative;
+    top: 20%;
+    display: block;
+  }
+}/*# sourceMappingURL=details.css.map */

@@ -14,7 +14,8 @@ export const Footer = () => {
             </div>
             <div className='containerLinks'>
                 <ul>
-                    <li className='footerLinks'><Link to="/">Artículos</Link></li>
+                    <li className='footerLinks'><Link to="/">Inicio</Link></li>
+                    <li className='footerLinks'><Link to="/">Saber sobre...</Link></li>
                 </ul>
             </div>
         </div>

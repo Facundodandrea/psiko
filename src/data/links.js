@@ -23,7 +23,7 @@ const links = [
   },
   { 
     id: 3,
-    feeling: 'Procastinación',
+    feeling: 'Procrastinación',
     imgSrc: procastination,
     linkTo: '/procastinacion',
   },
@@ -41,7 +41,7 @@ const links = [
   },
   { 
     id: 6,
-    feeling: 'Fatiga/Agotamiento',
+    feeling: 'Fatiga',
     imgSrc: fatigue,
     linkTo: '/fatiga-agotamiento',
   },

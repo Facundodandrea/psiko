@@ -39,7 +39,8 @@ const Navbar = () => {
                 </button>
             </div>
             <ul>
-              <li><Link to="/   ">Artículos</Link></li>
+              <li><Link to="/">Inicio</Link></li>
+              <li><Link to="/   ">Saber sobre...</Link></li>
             </ul>
         </div>
       )}

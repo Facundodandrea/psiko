@@ -5,8 +5,6 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import './home.css'
 
 import hero from '../../assets/img/hero.jpg';
-import { Buttons } from '../../components/buttons/Buttons';
-
 import parque from '../../assets/img/parque.png'
 import leer from '../../assets/img/leer.png'
 import empoderamiento from '../../assets/img/empoderando.png'
@@ -17,7 +15,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';import Card from '../../components/card/Card';
+import 'swiper/css/pagination';
+import Card from '../../components/card/Card';
 
 //Importamos datos
 import objetives from '../../data/objetive';
